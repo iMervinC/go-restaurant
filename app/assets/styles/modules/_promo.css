@@ -1,0 +1,17 @@
+.promo {
+	position: relative;
+	
+	&__content {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		transform: translateY(-50%);
+	}
+
+	& h1 {
+		color: 
+	}
+}
+

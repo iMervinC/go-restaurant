@@ -1,0 +1,27 @@
+.heading {
+	font-size: 90px; 
+	font-family: "YesevaOne"; 
+	color: rgba(255, 255, 255, 0.85);
+	
+	&::after {
+		width: 230px;
+		text-align: center;
+		height: auto;
+		content: url("/assets/images/decoration.png");
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top:339px;
+		right: 863px;
+		transform: scale(1.2);
+	}
+
+	&--1 {
+		font-size: 2rem;
+		text-shadow: 0px 4px 8px rgba(1, 1, 1, 0.64);
+
+		@mixin atMedium {
+		font-size: 8.25rem;
+	}
+	}
+}
