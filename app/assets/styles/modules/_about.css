@@ -1,6 +1,6 @@
-.promo {
+.about {
 	position: relative;
-	
+
 	&__content {
 		position: absolute;
 		top: 50%;
@@ -10,4 +10,3 @@
 		transform: translateY(-50%);
 	}
 }
-

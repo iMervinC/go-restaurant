@@ -366,30 +366,61 @@ template {
 }
 
 .heading::after {
-		width: 230px;
-		text-align: center;
-		height: auto;
-		content: url("/assets/images/decoration.png");
-		display: flex;
-		flex-direction: column;
-		position: absolute;
-		top:339px;
-		right: 863px;
-		-webkit-transform: scale(1.2);
-		        transform: scale(1.2);
+			content: url("/assets/images/decoration.png");
+			position: absolute;
+		}
+
+@media (min-width: 320px) {
+
+.heading::after {
+				margin-top: 20px;
+				-webkit-transform: translateX(-50%) translateY(-30%) scale(.7);
+				        transform: translateX(-50%) translateY(-30%) scale(.7)
+		}
 	}
 
+@media (min-width: 768px) {
+
+.heading::after {
+				-webkit-transform: translateX(-50%) translateY(-30%) scale(.9);
+				        transform: translateX(-50%) translateY(-30%) scale(.9)
+		}
+	}
+
+@media (min-width: 1440px) {
+
+.heading::after {
+				-webkit-transform: translateX(-50%) translateY(-50%) scale(1.2);
+				        transform: translateX(-50%) translateY(-50%) scale(1.2)
+		}
+}
+
 .heading--1 {
-		font-size: 2rem;
+		font-size: 2.75rem;
 		text-shadow: 0px 4px 8px rgba(1, 1, 1, 0.64);
+		font-weight: 100;
 	}
 
-@media (min-width: 800px) {
+@media (min-width: 320px) {
 
 .heading--1 {
-		font-size: 8.25rem
+			margin-bottom: 50px
 	}
 	}
+
+@media (min-width: 768px) {
+
+.heading--1 {
+			font-size: 3.8rem
+	}
+	}
+
+@media (min-width: 1440px) {
+
+.heading--1 {
+			font-size: 8.25rem
+	}
+}
 
 .wrapper {
 	padding-left: 315px;
@@ -406,13 +437,13 @@ template {
 	display: inline-block;
 	background-color: rgba(0, 0, 0, 1);
 	font-family: "Lato";
-	font-size: 0.625rem;
+	font-size: 0.8rem;
 	width: 7.9rem;
-	padding: 0.5rem;
+	padding: 0.75rem;
 	
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1440px) {
 
 .btn {
 		font-size: 1.125rem;
@@ -420,17 +451,32 @@ template {
 		padding: 1.5rem
 	
 }
-	}
+}
 
 .btn__promo {
 		display: flex;
 		justify-content: center;
+		flex-direction: column;
+	}
+
+@media (min-width: 768px) {
+
+.btn__promo {
+			flex-direction: row
+	}
 	}
 
 .btn--l {
-		margin-right:55px;
+		
 		background-color: rgba(0, 0, 0, .7);
 		border: solid 1px rgb(0,0,0,1);
+	}
+
+@media (min-width: 768px) {
+
+.btn--l {
+			margin-right:55px
+	}
 	}
 
 .btn--l:hover {

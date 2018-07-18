@@ -3,25 +3,41 @@
 	font-family: "YesevaOne"; 
 	color: rgba(255, 255, 255, 0.85);
 	
-	&::after {
-		width: 230px;
-		text-align: center;
-		height: auto;
-		content: url("/assets/images/decoration.png");
-		display: flex;
-		flex-direction: column;
-		position: absolute;
-		top:339px;
-		right: 863px;
-		transform: scale(1.2);
-	}
+
+		&::after {
+			content: url("/assets/images/decoration.png");
+			position: absolute;
+			
+			@mixin atSmall {
+				margin-top: 20px;
+				transform: translateX(-50%) translateY(-30%) scale(.7);
+			}
+
+			@mixin atMedium {
+				transform: translateX(-50%) translateY(-30%) scale(.9);
+			}
+
+			@mixin atLarge {
+				transform: translateX(-50%) translateY(-50%) scale(1.2);
+			}
+		}
+	
 
 	&--1 {
-		font-size: 2rem;
+		font-size: 2.75rem;
 		text-shadow: 0px 4px 8px rgba(1, 1, 1, 0.64);
-
+		font-weight: 100;
+		
+		@mixin atSmall {
+			margin-bottom: 50px;
+		}
+		
 		@mixin atMedium {
-		font-size: 8.25rem;
-	}
+			font-size: 3.8rem;
+		}
+
+		@mixin atLarge {
+			font-size: 8.25rem;
+		}
 	}
 }

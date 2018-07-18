@@ -1,18 +1,19 @@
 @define-mixin atSmall {
-	@media (min-width: 530px) {
+	@media (min-width: 320px) {
 		@mixin-content;
 	}
 }
 
 @define-mixin atMedium {
-	@media (min-width: 800px) {
+	@media (min-width: 768px) {
 		@mixin-content;
 	}
 }
 
 @define-mixin atLarge {
-	@media (min-width: 1000px) {
+	@media (min-width: 1440px) {
 		@mixin-content;
+	}
 }
 
 @define-mixin clearFix {
@@ -22,4 +23,4 @@
 		display: table;
 	}
 }
-}
+

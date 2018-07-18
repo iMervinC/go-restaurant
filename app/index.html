@@ -25,9 +25,13 @@
 	</header>
 	
 	<div class="promo" id="home">
-				<img class="bg-img" src="assets/images/Bg.png" alt="Spoon and pasta and leaves">
+			<picture>
+				<source srcset="assets/images/Bg1.png" media="(min-width: 1024px)">
+				<source srcset="assets/images/Bg1-medium.png" media="(min-width: 768px)">
+				<img class="bg-img" src="assets/images/Bg1-smaller.png" alt="Spoon and pasta and leaves">
+			</picture>
 			<div class="promo__content">
-				<h1 class="heading heading--1">the right ingredients <br> for the right food</h1>
+				<h1 class="heading heading--1">the right ingredients <br> for the right food<br></h1>
 				<div class="btn__promo">
 					<p><a class="btn btn--l" href="#">BOOK A TABLE</a></p>
 					<p><a class="btn btn--r" href="#">SEE THE MENU</a></p>
@@ -35,14 +39,15 @@
 			</div>
 	</div>
 	
-	<div id="about">
-		<div class="here">
+	<div class="about" id="about">
 			<img class="bg-img" src="assets/images/pattern.png" alt="Pattern">
+		<div class="about__content">	
 			<h2>Just the right food</h2>
 			<p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</p>
 			<img src="assets/images/cook.png" alt="chef">
 			<img class="bg-img" src="assets/images/dish.png" alt="dish">
 		</div>
+		
 	</div>
 	
 	<div id="ingredient">

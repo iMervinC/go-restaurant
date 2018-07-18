@@ -4,11 +4,11 @@
 	display: inline-block;
 	background-color: rgba(0, 0, 0, 1);
 	font-family: "Lato";
-	font-size: 0.625rem;
+	font-size: 0.8rem;
 	width: 7.9rem;
-	padding: 0.5rem;
+	padding: 0.75rem;
 
-	@mixin atMedium {
+	@mixin atLarge {
 		font-size: 1.125rem;
 		width: 14.18rem;
 		padding: 1.5rem;
@@ -17,12 +17,21 @@
 	&__promo {
 		display: flex;
 		justify-content: center;
+		flex-direction: column;
+
+		@mixin atMedium {
+			flex-direction: row;
+		}
 	}
 
 	&--l {
-		margin-right:55px;
+		
 		background-color: rgba(0, 0, 0, .7);
 		border: solid 1px rgb(0,0,0,1);
+		
+		@mixin atMedium {
+			margin-right:55px;
+		}
 
 		&:hover {
 		background-color: rgba(255, 255, 255, 0.278);
