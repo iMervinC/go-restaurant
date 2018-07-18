@@ -355,10 +355,6 @@ template {
 		        transform: translateY(-50%);
 	}
 
-.promo h1 {
-		color: 
-	}
-
 .heading {
 	font-size: 90px; 
 	font-family: "YesevaOne"; 
@@ -393,7 +389,7 @@ template {
 				-webkit-transform: translateX(-50%) translateY(-50%) scale(1.2);
 				        transform: translateX(-50%) translateY(-50%) scale(1.2)
 		}
-}
+	}
 
 .heading--1 {
 		font-size: 2.75rem;
@@ -420,7 +416,7 @@ template {
 .heading--1 {
 			font-size: 8.25rem
 	}
-}
+	}
 
 .wrapper {
 	padding-left: 315px;
@@ -451,7 +447,7 @@ template {
 		padding: 1.5rem
 	
 }
-}
+	}
 
 .btn__promo {
 		display: flex;
