@@ -18,7 +18,7 @@
 			}
 
 			@mixin atLarge {
-				transform: translateX(-50%) translateY(-50%) scale(1.2);
+				transform: translateX(-50%) translateY(-30%) scale(1.2);
 			}
 		}
 	
@@ -27,6 +27,7 @@
 		font-size: 2.75rem;
 		text-shadow: 0px 4px 8px rgba(1, 1, 1, 0.64);
 		font-weight: 100;
+		transform: translateY(-25%);
 		
 		@mixin atSmall {
 			margin-bottom: 50px;
@@ -39,5 +40,11 @@
 		@mixin atLarge {
 			font-size: 8.25rem;
 		}
+	}
+
+	&--2 {
+		font-size: 3rem; 
+		font-family: "YesevaOne"; 
+		color: #cc9900;
 	}
 }

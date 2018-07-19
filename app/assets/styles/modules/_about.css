@@ -1,12 +1,23 @@
 .about {
 	position: relative;
-
+	
+	
 	&__content {
 		position: absolute;
 		top: 50%;
+		top: 50%;
 		left: 0;
 		width: 100%;
-		text-align: center;
 		transform: translateY(-50%);
+		display: flex;
+		text-align: center;
+		justify-content: center;
+
+		&--l {
+			width: 490px;
+			margin-right: 60px;
+		}
 	}
+
+
 }

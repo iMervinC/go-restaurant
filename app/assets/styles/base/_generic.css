@@ -1,0 +1,10 @@
+.generic {
+	font-size: 1.3rem; 
+	font-family: "Lato"; 
+	color: rgb(76, 76, 76);
+	line-height: 1.5;
+	
+	&--about {
+		margin-bottom: 30px;
+	}
+}
